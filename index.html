@@ -1,19 +1,49 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Athenian Acres</title>
+    <script src="data.js" defer></script>
+    <script src="dashboard.js" defer></script>
 </head>
 
 <body>
 
-    <h1>Athenian Acres</h1>
-    <p>Welcome to the collection of Minerva's knowledge.</p>
+    <header>
+        <h1>Athenian Acres</h1>
+        <p>Geographical Database & Games</p>
+    </header>
 
-    <script>
-        console.log("AA is running!");
-    </script>
+    <nav>
+        <button>Dashboard</button>
+        <button>Countries</button>
+        <button>Cities</button>
+        <button>US States</button>
+        <button>Crosswords</button>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+
+            <div id="statistics">
+                <div class="stat-card">
+                    <h3>Countries</h3>
+                    <p id="countryCount">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Cities</h3>
+                    <p id="cityCount">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>US States</h3>
+                    <p id="stateCount">0</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
-
 </html>
